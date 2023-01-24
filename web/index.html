@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Today's Date</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+ 
+<body onload="startUpTime()">
+    <h1 id="uptimetext">
+    <script>
+      let startTime = Date.now();
+      function uptimeString(seconds) {
+          let days = Math.floor(seconds / (3600 * 24));
+          seconds -= days * 3600 * 24;
+          let hours = Math.floor(seconds / 3600);
+          seconds -= hours * 3600;
+          let minutes = Math.floor(seconds / 60);
+          seconds -= minutes * 60;
+          return `${days} Jours, ${hours} Heures, ${minutes} Minutes, et ${seconds} secondes`;
+      }
+  
+      function startUpTime() {
+          setInterval(() => {
+              let uptime = (Date.now() - startTime) / 1000;
+              document.getElementById("uptimetext").textContent = uptimeString(Math.floor(uptime));
+          }, 1000);
+      }
+    </script>
+  </body>
+  
+ 
+</html>

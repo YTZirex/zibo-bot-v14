@@ -1,0 +1,22 @@
+{
+  "name": "zibo-bot-v13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ofb_bbx#9740",
+  "license": "ISC",
+  "dependencies": {
+    "discord-economy-super": "^1.6.8",
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "os": "^0.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0"
+  }
+}
