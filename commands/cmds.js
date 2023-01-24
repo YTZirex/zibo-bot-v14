@@ -13,22 +13,22 @@ module.exports = {
                 {
                     name: 'botinfo',
                     value: ['Permet d\'avoir des informations sur moi tel que ma RAM, ma platforme, mes versions, etc...'].join('\n'),
-                    inline: true,
+                    inline: false,
                 },
                 {
                     name: 'serverinfo',
                     value: ['Permet d\'avoir des informations sur le serveur tel que le niveau de boost, le partenaire, le nom, etc...'].join('\n'),
-                    inline: true,
+                    inline: false,
                 },
                 {
                     name: 'userinfo',
                     value: ['Permet d\'avoir des informations sur soi-même.'].join('\n'),
-                    inline: true,
+                    inline: false,
                 },
                 {
                     name: 'cmds',
                     value: ['Permet de connaître les commandes du bot.'].join('\n'),
-                    inline: true,
+                    inline: false,
                 }
             );
         await interaction.reply({ embeds: [cmdsEmbed] });
