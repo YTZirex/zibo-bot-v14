@@ -2,7 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder, version } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('help')
+        .setName('cmds')
         .setDescription('Donne des informations sur les commandes du bot.'),
     async execute(interaction) {
         const cmdsEmbed = new EmbedBuilder()
