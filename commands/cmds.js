@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder, version} = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder, version } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -8,6 +8,7 @@ module.exports = {
         const cmdsEmbed = new EmbedBuilder()
             .setTitle("Commandes")
             .setColor('Blurple')
+            .setDescription('Plus de commandes seront disponibles au fur et à mesure.')
             .addFields(
                 {
                     name: 'botinfo',
@@ -29,6 +30,7 @@ module.exports = {
                     value: 'Permet de connaître les commandes du bot.'.join('\n'),
                     inline: true,
                 }
-            )
+            );
+        await interaction.reply({ embeds: [cmdsEmbed] });
     }
 }
