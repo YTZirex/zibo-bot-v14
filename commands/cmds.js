@@ -29,6 +29,11 @@ module.exports = {
                     name: 'cmds',
                     value: ['Permet de connaître les commandes du bot.'].join('\n'),
                     inline: false,
+                },
+                {
+                    name: 'messagemotivant',
+                    value: ['Donne un message motivant au hasard parmit notre liste.'].join('\n'),
+                    inline: false,
                 }
             );
         await interaction.reply({ embeds: [cmdsEmbed] });
