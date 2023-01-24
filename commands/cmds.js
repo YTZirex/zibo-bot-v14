@@ -1,0 +1,34 @@
+const { SlashCommandBuilder, EmbedBuilder, version} = require('discord.js');
+
+module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('help')
+        .setDescription('Donne des informations sur les commandes du bot.'),
+    async execute(interaction) {
+        const cmdsEmbed = new EmbedBuilder()
+            .setTitle("Commandes")
+            .setColor('Blurple')
+            .addFields(
+                {
+                    name: 'botinfo',
+                    value: 'Permet d\'avoir des informations sur moi tel que ma RAM, ma platforme, mes versions, etc...'.join('\n'),
+                    inline: true,
+                },
+                {
+                    name: 'serverinfo',
+                    value: 'Permet d\'avoir des informations sur le serveur tel que le niveau de boost, le partenaire, le nom, etc...'.join('\n'),
+                    inline: true,
+                },
+                {
+                    name: 'userinfo',
+                    value: 'Permet d\'avoir des informations sur soi-même.'.join('\n'),
+                    inline: true,
+                },
+                {
+                    name: 'cmds',
+                    value: 'Permet de connaître les commandes du bot.'.join('\n'),
+                    inline: true,
+                }
+            )
+    }
+}
