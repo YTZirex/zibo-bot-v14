@@ -60,7 +60,6 @@ module.exports = {
             //     value: `${interaction.user.presence.activities}`
             //  }
          )
-        .setDescription('e');
         i++;
         console.log(`The command has been used ${i} times since bot has been started.`);
         await interaction.reply({ embeds: [embed] });
