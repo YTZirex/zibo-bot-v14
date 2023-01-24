@@ -55,7 +55,7 @@ module.exports = {
                 },
                 {
                     name: 'Utilisation RAM : ',
-                    value: (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + 'MB',
+                    value: (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + ' MB' + ' / ' + '65 536 MB',
                     inline: true,
                 },
             );
