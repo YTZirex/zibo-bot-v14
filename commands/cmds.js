@@ -34,6 +34,11 @@ module.exports = {
                     name: 'messagemotivant',
                     value: ['Donne un message motivant au hasard parmit notre liste.'].join('\n'),
                     inline: true,
+                },
+                {
+                    name: '8ball',
+                    value: 'Permet de répondre à une question posée.',
+                    inline: true
                 }
             );
         await interaction.reply({ embeds: [cmdsEmbed] });
