@@ -9,7 +9,7 @@ module.exports = {
                 .setDescription('La question que vous voulez posez.')
                 .setRequired(true)),
     async execute(interaction) {
-        let question = interaction.option.getString('question');
+        let question = interaction.options.getString('question');
         console.log(question);
     }
 }
