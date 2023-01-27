@@ -37,7 +37,7 @@ module.exports = {
                 inline: true
             }
         )
-        console.log(`${interaction.user.tag} a demandé à la boule magique -> ${question}`);
+        console.log(`${interaction.user.tag} a demandé à la boule magique -> ${question}\nRéponse de la boule magique -> ${possibleAnswersArray[chosenAnswer]}`);
         interaction.reply({ embeds: [ballEmbed] });
     }
 }
