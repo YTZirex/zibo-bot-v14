@@ -35,8 +35,11 @@ module.exports = {
             inline: true,
           });
         interaction.reply({ embeds: [shutdownEmbed] });
-        await sleep(3000);
+        await sleep(1000);
+        console.log('Bot shutted down by', interaction.user.tag);
+        await sleep(1000);
         process.exit();
+        
       } else {
         interaction.reply({
           content: "Tu n'as pas la permission d'exécuter cette commande!",
