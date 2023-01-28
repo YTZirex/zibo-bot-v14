@@ -12,7 +12,7 @@ function uptimeString(seconds) {
     seconds -= hours * 3600;
         // eslint-disable-next-line prefer-const
     let minutes = Math.floor(seconds / 60);
-    seconds -= minutes * 60;ff
+    seconds -= minutes * 60;
     return `${days} Jours, ${hours} Heures, ${minutes} Minutes, et ${seconds} secondes`;
 }
 
