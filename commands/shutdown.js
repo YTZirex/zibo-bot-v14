@@ -1,4 +1,8 @@
-const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
+const {
+  SlashCommandBuilder,
+  EmbedBuilder,
+  messageLink,
+} = require("discord.js");
 const { execute } = require("./8ball");
 const whitelistedIds = ["860281357014794241"];
 
@@ -36,10 +40,9 @@ module.exports = {
           });
         interaction.reply({ embeds: [shutdownEmbed] });
         await sleep(1000);
-        console.log('Bot shutted down by', interaction.user.tag);
+        console.log("Bot shutted down by", interaction.user.tag);
         await sleep(1000);
         process.exit();
-        
       } else {
         interaction.reply({
           content: "Tu n'as pas la permission d'exécuter cette commande!",
