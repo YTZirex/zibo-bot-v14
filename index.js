@@ -1,4 +1,3 @@
-// we need to deobfuscate the code
 /* eslint-disable brace-style */
 /* eslint-disable indent */
 const dotenv = require('dotenv');
