@@ -1,7 +1,5 @@
 /* eslint-disable brace-style */
 /* eslint-disable indent */
-const dotenv = require('dotenv');
-dotenv.config();
 
 const fs = require('node:fs');
 const path = require('node:path');
