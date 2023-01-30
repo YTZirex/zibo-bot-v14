@@ -9,7 +9,7 @@
   "author": "ofb_bbx#9740",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.2.0",
+    "colors": "^1.4.0",
     "discord-economy-super": "^1.6.8",
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
