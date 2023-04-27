@@ -34,6 +34,7 @@ module.exports = {
       );
     } else {
       member.kick({ reason });
+      interaction.reply({ content: "L'utilisateur a été expulsé!" })
     }
   },
 };
