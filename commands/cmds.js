@@ -39,6 +39,16 @@ module.exports = {
                     name: '8ball',
                     value: 'Permet de répondre à une question posée.',
                     inline: true
+                },
+                {
+                    name: 'kick',
+                    value: ['Permet d\'expulser un utilisateur.'].join('\n'),
+                    inline: true
+                },
+                {
+                    name: 'pban',
+                    value: ['Permet de bannir de façon permanente un utilisateur.'].join('\n'),
+                    inline: true
                 }
             );
         await interaction.reply({ embeds: [cmdsEmbed] });
